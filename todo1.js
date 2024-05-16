@@ -42,14 +42,15 @@
 // removeDupes([-2,-2,3.14,5,5,10]) => [-2,3.14,5,10]
 // removeDupes([9,19,19,19,19,19,29]) => [9,19,29]
 
-function addFirstElement(myArray, desiredValue){
-    for (i= myArray.length; i>0; i--) {
-        myArray[i]= myArray[i-1]
-    } 
-    myArray[0]= desiredValue
-  return myArray
+function addFirstElement(myArray, desiredValue) {
+  for (let i = myArray.length; i > 0; i--) {
+    myArray[i] = myArray[i - 1];
+  }
+  myArray[0] = desiredValue;
+  return myArray;
 }
-console.log(addFirstElement([2,3,7,], 6))
+
+console.log(addFirstElement([2, 3, 7], 6));
 
 function popFront(myArray){
     myValue= myArray[0]
