@@ -6,7 +6,7 @@ function addFirstElement(myArray, desiredValue) {
   for (let i = myArray.length; i > 0; i--) {
     myArray[i] = myArray[i - 1];
   }
-  myArray[0] = desirValue;
+  myArray[0] = desiredValue;
   return myArray;
 }
 
