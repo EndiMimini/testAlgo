@@ -2,7 +2,7 @@ function addFirstElement(myArray, desiredValue){
     for (i= myArray.length; i>0; i--) {
         myArray[i]= myArray[i-1]
     } 
-    myArray[0]= desiredValue
+    myArray[0]= desirValue
   return myArray
 }
 console.log(addFirstElement([2,3,7,], 6))
