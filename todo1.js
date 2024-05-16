@@ -43,7 +43,7 @@
 // removeDupes([9,19,19,19,19,19,29]) => [9,19,29]
 
 function addFirstElement(myArray, desiredValue) {
-  for (let i = myArray.length; i >= 0; i--) {
+  for (let i = myArray.length; i > 0; i--) {
     myArray[i] = myArray[i - 1];
   }
   myArray[0] = desiredValue;
